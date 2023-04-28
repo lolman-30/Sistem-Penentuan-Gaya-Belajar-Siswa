@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,600");
+
+.pertanyaan-siswa {
+   align-items: center;
+   background-color: #ffffff;
+   border: 1px none;
+   display: flex;
+   flex-direction: column;
+   height: 1024px;
+   padding: 118px 0;
+   width: 1024px;
+}
+
+.hidden,
+.hidden * {
+   pointer-events: none;
+   visibility: hidden;
+}
+
+.overlap-group1 {
+   border-radius: 10px;
+   height: 107px;
+   margin-left: 5px;
+   margin-top: 56px;
+   position: relative;
+   width: 1207px;
+}
+
+.sering {
+   left: 38px;
+   letter-spacing: 0;
+   line-height: normal;
+   position: absolute;
+   text-align: justify;
+   top: 30px;
+}
+
+.rectangle-1 {
+   border: 1px solid;
+   border-color: rgba(0, 0, 0, 1);
+   border-radius: 10px;
+   height: 107px;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 1207px;
+}
+
+.title {
+   align-self: flex-start;
+   color: rgba(0, 0, 0, 1);
+   font-family: "Poppins";
+   font-size: 30px;
+   font-weight: 600;
+   letter-spacing: 0;
+   line-height: normal;
+   margin-left: 114px;
+   margin-top: 72px;
+   min-height: 45px;
+   min-width: 481px;
+   text-align: justify;
+}
+
+.overlap-group4 {
+   align-items: flex-start;
+   background-color: #d9d9d9;
+   border-radius: 15px;
+   display: flex;
+   min-width: 1212px;
+}
+
+.rectangle-16 {
+   background-color: #1c46db;
+   border-radius: 15px;
+   height: 25px;
+   width: 123px;
+}
+
+.overlap-group3 {
+   border-radius: 10px;
+   height: 107px;
+   margin-left: 1px;
+   margin-top: 40px;
+   position: relative;
+   width: 1207px;
+}
+
+.jarang {
+   left: 40px;
+   letter-spacing: 0;
+   line-height: normal;
+   position: absolute;
+   text-align: justify;
+   top: 30px;
+}
+
+.overlap-group {
+   border-radius: 10px;
+   height: 107px;
+   margin-left: 5px;
+   margin-top: 40px;
+   position: relative;
+   width: 1207px;
+}
+
+.kadang-kadang {
+   left: 30px;
+   letter-spacing: 0;
+   line-height: normal;
+   position: absolute;
+   text-align: justify;
+   top: 30px;
+}
+
+.overlap-group2 {
+   align-self: flex-end;
+   border-radius: 10px;
+   height: 60px;
+   margin-right: 116px;
+   margin-top: 65px;
+   position: relative;
+   width: 265px;
+}
+
+.rectangle-15 {
+   border: 1px solid;
+   border-color: rgba(0, 0, 0, 1);
+   border-radius: 10px;
+   height: 60px;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 265px;
+}
+
+.selanjutnya {
+   left: 18px;
+   letter-spacing: 0;
+   line-height: normal;
+   position: absolute;
+   text-align: justify;
+   top: 7px;
+}
+
+.arrow-1 {
+   height: 22px;
+   left: 217px;
+   position: absolute;
+   top: 19px;
+   width: 34px;
+}
+
+.poppins-normal-black-30px {
+   color: rgba(0, 0, 0, 1);
+   font-family: "Poppins";
+   font-size: 30px;
+   font-weight: 400;
+   font-style: normal;
+}
