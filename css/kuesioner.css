@@ -1,0 +1,27 @@
+#kuesioner {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+ }
+ 
+ .kuesioner.container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   max-width: 800px;
+ }
+ 
+ .btn {
+   margin-top: 20px;
+   padding: 12px 24px;
+   background-color: #1c87c9;
+   color: #fff;
+   font-size: 18px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+ }
+ 

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/tampil.css">
+   <link rel="stylesheet" href="./css/navbar.css">
+   <title>GAYA BELAJAR || NENTUIN</title>
+</head>
+
+<body>
+   <!-- Navbar -->
+   <section id="navbar">
+      <div class="navbar container">
+         <div class="nav-bar">
+            <div class="brand">
+               <a href="index.html">
+                  <h1>N<span>en</span>tu<span>in</span></h1>
+               </a>
+            </div>
+            <div class="nav-list">
+               <div class="hamburger">
+                  <div class="bar"></div>
+               </div>
+               <ul>
+                  <li><a href="gayaBelajar.html" data-after="gayaBelajar">Gaya Belajar</a></li>
+                  <li><a href="kuesioner.html" data-after="kuesioner">Kuesioner</a></li>
+                  <li><a href="hasil.php" data-after="hasil">Hasil</a></li>
+                  <li><a href="akun.php" id="akun" data-after="akun">Akun</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- End navbar -->
+   
+   <!-- Visual Section -->
+   <h1 style="margin-top: 10rem;">Gaya Belajar Visual</h1>
+   <img src="./img/visual1.png" style="width: 300px; height: auto;" alt="Gambar Gaya Belajar Visual">
+   <p style="margin-bottom: 5rem; text-align: justify; max-width: 50%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam convallis sapien a augue iaculis auctor.
+      Integer lacinia maximus elit, ut tempor lorem laoreet sit amet. Donec auctor lectus nunc, vitae fermentum mi
+      elementum eget. Proin eget mauris risus. Nullam vel aliquet orci. Donec laoreet pharetra convallis. Duis
+      fringilla, velit eget posuere molestie, sapien metus porta nisi, non lacinia ex risus a justo. Praesent
+      tristique, urna ac consectetur commodo, neque tellus viverra dolor, eget pulvinar sapien risus eget nunc.
+      Sed vestibulum erat vel sem maximus lacinia. Nam vel tincidunt mauris, ac aliquam libero. Donec nec enim
+      eget nunc malesuada tincidunt. Etiam bibendum euismod mauris ut sollicitudin. Morbi vel ligula vel sapien
+      faucibus mollis. Donec ultricies magna eu mauris tincidunt, in malesuada nulla sagittis.</p>
+      
+   <!-- End-Visual Section -->
+
+   <!-- Auditori Section -->
+   <h1>Gaya Belajar Auditori</h1>
+   <img src="./img/auditori1.png" style="width: 300px; height: auto;" alt="Gambar Gaya Belajar Auditori">
+   <p style="margin-bottom: 5rem; text-align: justify; max-width: 50%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam convallis sapien a augue iaculis auctor.
+      Integer lacinia maximus elit, ut tempor lorem laoreet sit amet. Donec auctor lectus nunc, vitae fermentum mi
+      elementum eget. Proin eget mauris risus. Nullam vel aliquet orci. Donec laoreet pharetra convallis. Duis
+      fringilla, velit eget posuere molestie, sapien metus porta nisi, non lacinia ex risus a justo. Praesent
+      tristique, urna ac consectetur commodo, neque tellus viverra dolor, eget pulvinar sapien risus eget nunc.
+      Sed vestibulum erat vel sem maximus lacinia. Nam vel tincidunt mauris, ac aliquam libero. Donec nec enim
+      eget nunc malesuada tincidunt. Etiam bibendum euismod mauris ut sollicitudin. Morbi vel ligula vel sapien
+      faucibus mollis. Donec ultricies magna eu mauris tincidunt, in malesuada nulla sagittis.</p>
+   <!-- End-Auditori Section -->
+
+   <!-- Kinestetik Section -->
+   <h1>Gaya Belajar Kinestetik</h1>
+   <img src="./img/kinestetik1.png" style="width: 300px; height: auto;" alt="Gambar Gaya Belajar Kinestetik">
+   <p style="margin-bottom: 5rem; text-align: justify; max-width: 50%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam convallis sapien a augue iaculis auctor.
+      Integer lacinia maximus elit, ut tempor lorem laoreet sit amet. Donec auctor lectus nunc, vitae fermentum mi
+      elementum eget. Proin eget mauris risus. Nullam vel aliquet orci. Donec laoreet pharetra convallis. Duis
+      fringilla, velit eget posuere molestie, sapien metus porta nisi, non lacinia ex risus a justo. Praesent
+      tristique, urna ac consectetur commodo, neque tellus viverra dolor, eget pulvinar sapien risus eget nunc.
+      Sed vestibulum erat vel sem maximus lacinia. Nam vel tincidunt mauris, ac aliquam libero. Donec nec enim
+      eget nunc malesuada tincidunt. Etiam bibendum euismod mauris ut sollicitudin. Morbi vel ligula vel sapien
+      faucibus mollis. Donec ultricies magna eu mauris tincidunt, in malesuada nulla sagittis.</p>
+   <!-- End-Kinestetik Section -->
+
+   <!-- Footer -->
+   <div id="4"></div>
+   <script>
+      load("footer.html");
+      function load(url) {
+         req = new XMLHttpRequest();
+         req.open("GET", url, false);
+         req.send(null);
+         document.getElementById(4).innerHTML = req.responseText;
+      }
+   </script>
+   <script>
+      // Event listener untuk hamburger menu
+      const hamburger = document.querySelector('#navbar .nav-bar .nav-list .hamburger');
+      const mobile_menu = document.querySelector('#navbar .nav-bar .nav-list ul');
+
+      hamburger.addEventListener('click', () => {
+         hamburger.classList.toggle('active');
+         mobile_menu.classList.toggle('active');
+      });
+
+      // Event listener untuk scroll
+      const header = document.querySelector('#navbar .navbar');
+      document.addEventListener('scroll', () => {
+         var scroll_position = window.scrollY;
+         if (scroll_position > 250) {
+            header.style.backgroundColor = "#29323c";
+         } else {
+            header.style.backgroundColor = "transparent";
+         }
+      });
+
+      // Event listener untuk menu item
+      const menu_item = document.querySelectorAll('#navbar .nav-bar .nav-list ul li a');
+      menu_item.forEach((item) => {
+         item.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            mobile_menu.classList.remove('active');
+         });
+      });
+   </script>
+</body>
+
+</html>
