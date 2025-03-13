@@ -1,159 +1,144 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,600");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-image: url(https://pewarta-indonesia.com/wp-content/uploads/2021/11/Cara-Cepat-Belajar-Kimia.png);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+}
 
 .pertanyaan-siswa {
-   align-items: center;
-   background-color: #ffffff;
-   border: 1px none;
-   display: flex;
-   flex-direction: column;
-   height: 1024px;
-   padding: 118px 0;
-   width: 1024px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 600px; /* Increase the max-width to 600px */
 }
 
-.hidden,
-.hidden * {
-   pointer-events: none;
-   visibility: hidden;
+.progress {
+  height: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin-bottom: 15px;
 }
 
-.overlap-group1 {
-   border-radius: 10px;
-   height: 107px;
-   margin-left: 5px;
-   margin-top: 56px;
-   position: relative;
-   width: 1207px;
-}
-
-.sering {
-   left: 38px;
-   letter-spacing: 0;
-   line-height: normal;
-   position: absolute;
-   text-align: justify;
-   top: 30px;
-}
-
-.rectangle-1 {
-   border: 1px solid;
-   border-color: rgba(0, 0, 0, 1);
-   border-radius: 10px;
-   height: 107px;
-   left: 0;
-   position: absolute;
-   top: 0;
-   width: 1207px;
+.progress-bar {
+  height: 100%;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  border-radius: 5px;
+  width: 30%; /* Change this width dynamically with JavaScript to update progress */
 }
 
 .title {
-   align-self: flex-start;
-   color: rgba(0, 0, 0, 1);
-   font-family: "Poppins";
-   font-size: 30px;
-   font-weight: 600;
-   letter-spacing: 0;
-   line-height: normal;
-   margin-left: 114px;
-   margin-top: 72px;
-   min-height: 45px;
-   min-width: 481px;
-   text-align: justify;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
 }
 
-.overlap-group4 {
-   align-items: flex-start;
-   background-color: #d9d9d9;
-   border-radius: 15px;
-   display: flex;
-   min-width: 1212px;
+.button-pilih {
+  margin-bottom: 15px;
 }
 
-.rectangle-16 {
-   background-color: #1c46db;
-   border-radius: 15px;
-   height: 25px;
-   width: 123px;
+.option-text {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #333;
+  font-size: 18px;
 }
 
-.overlap-group3 {
-   border-radius: 10px;
-   height: 107px;
-   margin-left: 1px;
-   margin-top: 40px;
-   position: relative;
-   width: 1207px;
+.option-text:hover {
+  background-color: #e0e0e0;
 }
 
-.jarang {
-   left: 40px;
-   letter-spacing: 0;
-   line-height: normal;
-   position: absolute;
-   text-align: justify;
-   top: 30px;
+.option-text.active {
+  background-color: #485563;
+  color: #ffffff;
 }
 
-.overlap-group {
-   border-radius: 10px;
-   height: 107px;
-   margin-left: 5px;
-   margin-top: 40px;
-   position: relative;
-   width: 1207px;
+.button-pilih2,
+.button-pilih3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
 }
 
-.kadang-kadang {
-   left: 30px;
-   letter-spacing: 0;
-   line-height: normal;
-   position: absolute;
-   text-align: justify;
-   top: 30px;
+.button-pilih2 {
+  text-align: right;
+  float: right;
+  margin-right: 10px;
 }
 
-.overlap-group2 {
-   align-self: flex-end;
-   border-radius: 10px;
-   height: 60px;
-   margin-right: 116px;
-   margin-top: 65px;
-   position: relative;
-   width: 265px;
+.button-pilih3 {
+  text-align: left;
+  float: left;
+  margin-left: 10px;
 }
 
-.rectangle-15 {
-   border: 1px solid;
-   border-color: rgba(0, 0, 0, 1);
-   border-radius: 10px;
-   height: 60px;
-   left: 0;
-   position: absolute;
-   top: 0;
-   width: 265px;
+.selanjutnya,
+.keluar {
+  padding: 15px 30px;
+  background-color: #485563;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
 }
 
+.selanjutnya:hover,
+.keluar:hover {
+  background-color: #485563;
+}
+
+/* Styling for the buttons to create a gradient effect */
 .selanjutnya {
-   left: 18px;
-   letter-spacing: 0;
-   line-height: normal;
-   position: absolute;
-   text-align: justify;
-   top: 7px;
+  background-image: linear-gradient(to right, #4caf50, #4caf50);
 }
 
-.arrow-1 {
-   height: 22px;
-   left: 217px;
-   position: absolute;
-   top: 19px;
-   width: 34px;
+.keluar {
+  background-image: linear-gradient(to right, #ff4500, #ff4500);
 }
 
-.poppins-normal-black-30px {
-   color: rgba(0, 0, 0, 1);
-   font-family: "Poppins";
-   font-size: 30px;
-   font-weight: 400;
-   font-style: normal;
+/* Footer Styles */
+#footer {
+  background-image: linear-gradient(to right, #333, #111);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+#footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Button Alignment */
+.button-pilih2 {
+  justify-content: space-between;
 }

@@ -1,0 +1,40 @@
+body {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font-family: Arial, sans-serif;
+}
+
+h1 {
+   margin-bottom: 20px;
+   text-align: center;
+}
+
+img {
+   width: 300px;
+   height: auto;
+   float: right;
+   margin-left: 20px;
+   margin-bottom: 20px;
+}
+
+p {
+   max-width: 100%;
+}
+
+
+/* CSS untuk perangkat seluler (ponsel) dengan lebar maksimum 600px */
+@media (max-width: 600px) {
+   /* Tambahkan CSS responsif yang diperlukan di sini */
+}
+
+/* CSS untuk tablet dengan lebar maksimum 768px */
+@media (max-width: 768px) {
+   /* Tambahkan CSS responsif yang diperlukan di sini */
+}
+
+/* CSS untuk tablet dengan lebar maksimum 1024px */
+@media (max-width: 1024px) {
+   /* Tambahkan CSS responsif yang diperlukan di sini */
+}

@@ -1,108 +1,111 @@
-/* Set background color and center background image */
 body {
   background-color: #304d63;
-  background-image: url(https://anime-uploads.s3.amazonaws.com/projects/642731515f131ed963-1.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
-  margin: 0;
-}
-
-/* Set styles for login form */
-.login-username {
-  background-color: #ffffff;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  padding: 50px;
-  width: 80%;
-  max-width: 700px;
+  height: 35rem;
 }
 
-/* Set styles for form header */
-.title {
-  color: #304d63;
-  font-family: "Inter";
-  font-size: 50px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: normal;
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-/* Set styles for form fields */
-.username-email,
-.password {
-  color: #304d63;
-  font-family: "Inter";
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: normal;
-  margin-bottom: 10px;
-  text-align: left;
-  width: 100%;
-}
-
-/* Set styles for form input fields */
-.rectangle-2,
-.rectangle-3 {
-  height: 44px;
-  width: 100%;
-  border: 1px solid #d9d9d9;
+/* login */
+.screen {
+  background-color: white;
+  padding: 20px;
   border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  width: 30rem;
+  margin: auto;
+}
+
+/* registrasi */
+.screen-registrasi {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  width: 30rem;
+  height: 32rem;
+  margin: 8rem auto 0;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  margin-top: 30px;
   margin-bottom: 20px;
-  padding: 0 20px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+
+.masukkan-akun-anda {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.input-label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.input-field {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 100%;
   box-sizing: border-box;
 }
 
-/* Set styles for submit button */
-.overlap-group {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #304d63;
-  border-radius: 10px;
-  height: 44px;
-  width: 100%;
-  margin-top: 20px;
-}
-
 .masuk {
-  color: #ffffff;
-  font-family: "Inter";
-  font-size: 15px;
+  background-color: #304d63;
+  color: white;
+  font-size: 16px;
   font-weight: 600;
-  letter-spacing: 0;
-  line-height: normal;
+  padding: 10px 20px;
+  border-radius: 5px;
   text-align: center;
-  width: 100%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
-/* Set styles for sign up link */
-.anda-sudah-memiliki-akun {
-  color: #304d63;
-  font-family: "Inter";
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: normal;
-  margin-top: 20px;
+.masuk:hover {
+  background-color: #193047;
+}
+
+.registrasi {
+  background-color: #304d63;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 5px;
   text-align: center;
-  width: 100%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.registrasi:hover {
+  background-color: #193047;
+}
+
+
+.anda-sudah-memiliki-akun {
+  font-size: 14px;
+  margin-top: 20px;
 }
 
 .daftar {
-  color: #1c46db;
-  font-family: "Inter";
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: normal;
+  color: #304d63;
+  font-weight: 600;
+  text-decoration: none;
   margin-left: 5px;
+}
